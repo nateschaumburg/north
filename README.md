@@ -1,8 +1,8 @@
 ## North - A Ghost Theme
 
-North is designed and developed by [refueled](https://refueled.net). North is still being worked on, so not everything might be styled. Feel free to still use it and test it out.
+North is designed and developed by [Refueled](https://refueled.net). North is still being worked on, so not everything might be styled. Feel free to still use it and test it out.
 
-North is a minimal Ghost theme that's perfect for showcasing photography and other creative works.
+North is a minimal Ghost theme that's a perfect starting point for blogs. It's also designed and developer in a way to create your own Ghost theme.
 
 ## Files to edit
  * default.hbs
