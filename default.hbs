@@ -28,13 +28,13 @@
 					<a class="gh-head-logo" href="{{@site.url}}"><img src="{{@site.logo}}" alt="{{@site.title}}"></a>
 				{{else}}
 					<h1 class="site-title"><a href="{{@site.url}}">{{@site.title}}</a></h1>
-					<h2 class="site-description">{{@site.description}}</h2>
+					<p class="site-description">{{@site.description}}</p>
 				{{/if}}
 			</div><!-- .site-branding -->
 		</header><!-- #masthead -->
 
 		<div id="content" class="site-content">
-			{{#if @site.cover_image}}<div class="header-image" style="background-image: url('{{@site.cover_image}}');"></div>{{/if}}<!-- .header-image -->
+			{{#if @site.cover_image}}<div class="header-image" style="background-image: url('{{@site.cover_image}}');"></div>{{/if}}
 
 			<div id="primary" class="content-area">
 				<main id="main" class="site-main">
@@ -54,7 +54,7 @@
 					{{navigation type="secondary"}}
 				</div>
 			{{/if}}
-		
+
 			<section class="copyright">
                 {{#unless @custom.footer_text}}
                     Published with <a href="https://ghost.org/" target="_blank">Ghost</a> &amp; <a href="https://refueled.net">North</a>
@@ -72,7 +72,6 @@
 	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="{{asset "js/custom.js"}}"></script>
 	<script type="text/javascript" src="{{asset "js/navigation.js"}}"></script>
-	<script type="text/javascript" src="{{asset "js/toggle.js"}}"></script>
 
 </body>
 </html>
