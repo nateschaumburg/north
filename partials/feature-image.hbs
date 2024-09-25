@@ -1,5 +1,6 @@
 {{#if feature_image}}
 <figure class="gh-feature-image">
+    <a href="{{url}}">
     <img
         srcset="{{img_url feature_image size="s"}} 300w,
                 {{img_url feature_image size="m"}} 600w,
@@ -10,5 +11,6 @@
         src="{{img_url feature_image size="xl"}}"
         alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}"
     />
+    </a>
 </figure>
 {{/if}}
