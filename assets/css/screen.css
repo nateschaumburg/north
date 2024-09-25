@@ -378,7 +378,6 @@ a:active {
 .site-title {
 	font-size: 42px;
 	font-weight: 700;
-	letter-spacing: 4px;
 	margin: 0;
 	padding: 0;
 	text-transform: uppercase;
@@ -397,7 +396,7 @@ a:active {
 	color: #aaa;
 	font-size: 18px;
 	font-weight: 400;
-	margin: 0 auto;
+	margin: 5px auto 0;
 	padding: 0;
 	width: 75%
 }
@@ -536,6 +535,11 @@ a:active {
 	padding: 5% 0 !important;
 	overflow: hidden;
 	text-align: left;
+}
+
+.home-template .entry-footer,
+.tag-template .entry-footer {
+	padding: 0 0 5% !important
 }
 
 /* author */

@@ -21,17 +21,20 @@ Re-usable card for linking to posts
     {{/if}}
 
     <div class="content-wrap">
-        <div class="gh-card-content">
-            <div class="entry-header">
-                <div class="entry-meta">
-                    <span class="gh-card-meta entry-meta"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMMM DD YYYY"}}</time> <span class="bull">&middot;</span> {{reading_time}}</span>
-                </div>
-                <h2 class="entry-title"><a href="{{url}}">{{{title}}}</a></h2>
+        <header class="entry-header gh-content gh-canvas">
+            <div class="entry-meta">
+                <span class="gh-card-meta entry-meta"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMMM DD YYYY"}}</time> <span class="bull">&middot;</span> {{reading_time}}</span>
             </div>
 
-            <p>{{excerpt}}</p>
+            <h1 class="entry-title">{{{title}}}</h1>
+        </header><!-- .entry-header -->
 
-            <a class="more-link" href="{{url}}">Read more</a>
+        <div class="entry-content gh-content gh-canvas">
+            <p>{{excerpt}}</p>
         </div>
-    </div>
+
+        <footer class="entry-footer post-footer gh-content gh-canvas">
+            <a class="more-link" href="{{url}}">Read More</a>
+        </footer>
+    </div><!-- .content-wrapper -->
 </article>
