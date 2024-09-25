@@ -19,8 +19,8 @@ Need to edit North? The best free editor is VS Code. VS Code download:
 https://code.visualstudio.com/
 
 ## Need help editing North?
-You can hire us to make custom edits. Simply email us at info@refueled.net to get started.
+You can hire us to make custom edits. Contact us [Refueled](https://refueled.net/contact)
 
 ## Changelog
-# 1.0.0 - Dec. 18, 2023
+# 1.0.0 - 9/25/24
 * Initial release
