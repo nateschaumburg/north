@@ -1,0 +1,1041 @@
+/*
+Theme Name: North
+Theme URI: https://refueled.net/north
+Author: refueled
+Author URI: https://refueled.net
+*/
+
+/* Normalize
+/* ---------------------------------------------------------- */
+html {
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*, *::after, *::before {
+	box-sizing: inherit;
+}
+
+body {
+	background: #292929;
+	margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+	display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+[hidden],
+template {
+	display: none;
+}
+
+a {
+	background-color: transparent;
+}
+
+a:active, a:hover {
+	outline: 0;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+dfn {
+	font-style: italic;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+mark {
+	background: #ff0;
+	color: #000;
+}
+
+small {
+	font-size: 80%;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+img {
+	border: 0;
+}
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+figure {
+	margin: 1em 40px;
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+}
+
+pre {
+	overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	color: inherit;
+	font: inherit;
+	margin: 0;
+}
+
+button {
+	overflow: visible;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+	cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+input {
+	line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	box-sizing: border-box;
+	/* 1 */
+	padding: 0;
+	/* 2 */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+input[type="search"] {
+	box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+	border: 0;
+	padding: 0;
+}
+
+textarea {
+	overflow: auto;
+}
+
+optgroup {
+	font-weight: bold;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+td,
+th {
+	padding: 0;
+}
+
+
+/* Typography
+/* ---------------------------------------------------------- */
+body,
+button,
+input,
+select,
+textarea {
+	color: #25292c;
+	font-family: 'Arimo', sans-serif;
+	font-size: 18px;
+	line-height: 1.625;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+}
+
+.tag-archive h3 {
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+p {
+	margin: 0 0 24px;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote,
+q {
+	margin: 0 24px;
+	quotes: "" "";
+}
+
+blockquote:before, blockquote:after,
+q:before,
+q:after {
+	content: "";
+}
+
+address {
+	margin: 0 0 24px 0;
+}
+
+pre {
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	line-height: 1.625;
+	margin: 0 0 24px;
+	max-width: 100%;
+	overflow: auto;
+	padding: 24px;
+}
+
+code,
+kbd,
+tt,
+var {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size: 15px;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666666;
+	cursor: help;
+}
+
+mark,
+ins {
+	text-decoration: none;
+}
+
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: .5ex;
+}
+
+small {
+	font-size: 75%;
+}
+
+big {
+	font-size: 125%;
+}
+
+
+/* Accessibility
+/* ---------------------------------------------------------- */
+.screen-reader-text {
+	height: auto;
+	width: 1px;
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	overflow: hidden;
+	position: absolute !important;
+}
+
+.screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus {
+	height: auto;
+	width: auto;
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: 700;
+	left: 0.3125rem;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 0.3125rem;
+	z-index: 100000;
+}
+
+
+/* Alighments
+/* ---------------------------------------------------------- */
+.alignleft {
+	display: inline;
+	float: left;
+	margin: 0 24px 0 0;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin: 0 0 0 24px;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* Clearings
+/* ---------------------------------------------------------- */
+.clear::after,
+.entry-content::after,
+.comment-content::after,
+.site-header::after,
+.site-content::after,
+.site-footer::after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+
+/* HTML Elements
+/* ---------------------------------------------------------- */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+hr {
+	height: 1px;
+	width: auto;
+	background-color: #ccc;
+	border: 0;
+	margin: 0 0 24px;
+}
+
+figure {
+	margin: 0;
+}
+
+ul,
+ol {
+	margin: 0 0 48px 15px;
+}
+
+ul {
+	list-style: square;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin: 0 0 0 24px;
+}
+
+dt {
+	font-weight: 700;
+}
+
+dd {
+	margin: 0 24px 24px 0;
+}
+
+table {
+	height: auto;
+	width: 100%;
+	margin: 0 0 24px 0;
+}
+
+th {
+	font-weight: 700;
+}
+
+
+/* Forms
+/* ---------------------------------------------------------- */
+button,
+input,
+select,
+textarea {
+	box-sizing: border-box;
+	font-size: 100%;
+	margin: 10px 0;
+	outline: none;
+	vertical-align: baseline;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	padding: 0;
+}
+
+input[type="text"]::-ms-clear,
+input[type="search"]::-ms-clear {
+	display: none;
+}
+
+input[type="search"] {
+	box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="number"],
+textarea {
+	color: #fff;
+	background: #e3e5e5;
+	border: 0;
+	border-radius: 0;
+	box-sizing: border-box;
+	line-height: 1.45;
+	padding: 12px;
+	width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+	color: #111;
+}
+
+textarea {
+	height: auto;
+	width: 100%;
+	overflow: auto;
+	vertical-align: top;
+}
+
+/* Content refers to styling all page and post content that is
+created within the Ghost editor. */
+.gh-viewport {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.gh-outer {
+    padding: 0 max(4vmin, 20px);
+}
+
+.gh-outer .gh-outer {
+    padding: 0;
+}
+
+.gh-inner {
+    margin: 0 auto;
+    max-width: var(--container-width);
+    width: 100%;
+}
+
+.gh-main {
+    flex-grow: 1;
+}
+
+.gh-canvas,
+.gh-card-wrapper,
+.kg-width-full.kg-content-wide {
+    --main: min(var(--content-width, 700px), 100% - var(--container-gap) * 2);
+    --wide: minmax(0, calc((var(--container-width, 1200px) - var(--content-width, 700px)) / 2));
+    --full: minmax(var(--container-gap), 1fr);
+
+    display: grid;
+    grid-template-columns:
+        [full-start] var(--full)
+        [wide-start] var(--wide)
+        [main-start] var(--main) [main-end]
+        var(--wide) [wide-end]
+        var(--full) [full-end];
+}
+
+.gh-canvas > * {
+    grid-column: main;
+}
+
+.kg-width-wide,
+.kg-content-wide > div {
+    grid-column: wide;
+}
+
+.kg-width-full {
+    grid-column: full;
+}
+
+.gh-content {
+    letter-spacing: -0.01em;
+}
+
+/* Default vertical spacing */
+.gh-content > * + * {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+/* Remove space between full-width cards */
+.gh-content > .kg-width-full + .kg-width-full:not(.kg-width-full.kg-card-hascaption + .kg-width-full) {
+    margin-top: 0;
+}
+
+/* Add back a top margin to all headings,
+unless a heading is the very first element in the post content */
+.gh-content > [id]:not(:first-child) {
+    margin-top: 15px;
+}
+
+/* Add drop cap setting */
+.post-template .gh-content.drop-cap > p:first-of-type:first-letter {
+    margin :0 0.2em 0em 0;
+    font-size: 3.1em;
+    float:left;
+    line-height: 1;
+    margin-left: -1px;
+    font-weight: 700;
+}
+
+.has-serif-body.post-template .gh-content.drop-cap > p:first-of-type:first-letter {
+    font-size: 3.2em;
+}
+
+/* Add a small margin between a heading and paragraph after it */
+.gh-content > [id] + p {
+   margin-top: 15px;
+}
+
+/* A larger margin before/after dividers, blockquotes and embeds */
+.gh-content > :is(hr, blockquote, iframe) {
+    position: relative;
+   	margin-top: 15px;
+}
+
+.gh-content > :is(hr, blockquote, iframe) + * {
+    margin-top: 15px;
+}
+
+/* Now the content typography styles */
+.gh-content h1 {
+    font-size: calc(2.2em * var(--factor, 1));
+}
+
+.gh-content h2 {
+    font-size: calc(1.6em * var(--factor, 1));
+}
+
+.gh-content h3 {
+    font-size: calc(1.3em * var(--factor, 1));
+}
+
+.gh-content a {
+    color: var(--ghost-accent-color);
+    text-decoration: underline;
+}
+
+.gh-content .kg-callout-card .kg-callout-text,
+.gh-content .kg-toggle-card .kg-toggle-content > :is(ul, ol, p) {
+    font-size: 0.95em;
+}
+
+.gh-content :is(ul, ol) {
+    padding-left: 28px;
+}
+
+.gh-content :is(li + li, li :is(ul, ol)) {
+    margin-top: 8px;
+}
+
+.gh-content ol ol li {
+    list-style-type: lower-alpha;
+}
+
+.gh-content ol ol ol li {
+    list-style-type: lower-roman;
+}
+
+.gh-content hr {
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-border);
+    border: 0;
+}
+
+.gh-content .gh-table {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.gh-content .gh-table table {
+    width: 100%;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    vertical-align: top;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.gh-content .gh-table table th {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-darkgrey);
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.gh-content .gh-table table :is(th, td),
+.gh-content .gh-table table td {
+    padding: 6px 12px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.gh-content .gh-table table :is(th, td):first-child {
+    padding-left: 0;
+}
+
+.gh-content .gh-table table :is(th, td):last-child {
+    padding-right: 0;
+}
+
+.gh-content pre {
+    overflow: auto;
+    padding: 16px;
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    background: var(--color-lighter-gray);
+    border-radius: 6px;
+}
+
+.gh-content :not(pre) > code {
+    vertical-align: baseline;
+    padding: 0.15em 0.4em;
+    font-weight: 400;
+    font-size: 0.95em;
+    line-height: 1em;
+    background: var(--color-lighter-gray);
+    border-radius: 0.25em;
+}
+
+/* 16. Cards
+/* ---------------------------------------------------------- */
+
+/* Add extra margin before/after any cards, except for when immediately preceeded by a heading */
+
+.gh-content :not(.kg-card):not(table):not([id]) + :is(.kg-card, table) {
+    margin-top: 2em;
+}
+
+.gh-content :is(.kg-card, table) + :not(.kg-card):not(table):not([id]) {
+    margin-top: 2em;
+}
+
+.gh-content :not(.kg-card):not([id]) + .kg-card.kg-width-full {
+    margin-top: 2em;
+}
+
+.gh-content .kg-card.kg-width-full + :not(.kg-card):not([id]) {
+    margin-top: 2em;
+}
+
+/* Image */
+
+.kg-image {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Embed */
+
+.kg-embed-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Gallery */
+
+.kg-image[width][height],
+.kg-gallery-image {
+    cursor: pointer;
+}
+
+.kg-image-card a:hover,
+.kg-gallery-image a:hover {
+    opacity: 1 !important;
+}
+
+/* Toggle */
+
+.kg-card.kg-toggle-card .kg-toggle-heading-text {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 44px;
+    margin: 0;
+}
+
+/* Callout */
+
+.kg-callout-card.kg-card {
+    border-radius: 0.25em;
+}
+
+.kg-callout-card-accent a {
+    text-decoration: underline;
+}
+
+/* Blockquote */
+
+blockquote:not([class]) {
+    padding-left: 2rem;
+    border-left: 4px solid var(--ghost-accent-color);
+}
+
+blockquote.kg-blockquote-alt {
+    font-style: normal;
+    font-weight: 400;
+    color: var(--color-secondary-text);
+}
+
+/* Button */
+
+.kg-card.kg-button-card .kg-btn {
+    height: unset;
+    padding: .6em 1.2em;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.2em;
+}
+
+/* Bookmark */
+
+.kg-bookmark-card .kg-bookmark-container {
+    border-radius: 0.25em !important;
+}
+
+.kg-bookmark-card .kg-bookmark-container:hover {
+    opacity: 1;
+}
+
+.kg-bookmark-card a.kg-bookmark-container,
+.kg-bookmark-card a.kg-bookmark-container:hover {
+    background: var(--background-color) !important;
+    color: var(--color-darker-gray) !important;
+}
+
+.kg-bookmark-card .kg-bookmark-content {
+    padding: 1.15em;
+}
+
+.kg-bookmark-card .kg-bookmark-title {
+    font-size: 0.9em;
+}
+
+.kg-bookmark-card .kg-bookmark-description {
+    max-height: none;
+    margin-top: 0.3em;
+    font-size: 0.8em;
+}
+
+.kg-bookmark-card .kg-bookmark-metadata {
+    font-size: 0.8em;
+}
+
+.kg-bookmark-card .kg-bookmark-thumbnail img {
+    border-radius: 0 0.2em 0.2em 0;
+}
+
+/* Product */
+
+.kg-product-card.kg-card .kg-product-card-image {
+    margin-bottom: 12px;
+}
+
+.kg-product-card.kg-card a.kg-product-card-button {
+    height: 2.8em;
+    margin-top: 12px;
+}
+
+/* File */
+
+.kg-file-card.kg-card .kg-file-card-container {
+    padding: 0.6em;
+}
+
+.kg-file-card.kg-card .kg-file-card-contents {
+    margin: 4px 8px 6px;
+}
+
+.kg-file-card.kg-card .kg-file-card-metadata {
+    font-size: 0.9em;
+}
+
+.kg-file-card.kg-card .kg-file-card-filesize::before {
+    margin-right: 6px;
+    margin-left: 6px;
+}
+
+/* Caption */
+
+figcaption {
+    margin-top: 12px;
+    text-align: center;
+}
+
+.kg-card.kg-width-full figcaption {
+    padding: 0 16px;
+}
+
+figcaption a {
+    color: var(--ghost-accent-color);
+    text-decoration: underline;
+}
+
+/* 17. Comments
+/* ---------------------------------------------------------- */
+
+.gh-comments {
+    margin-top: 48px;
+}
+
+/* 18. Recent posts
+/* ---------------------------------------------------------- */
+
+.post-template .gh-container {
+    margin-top: 120px;
+}
+
+.post-template .gh-container-inner {
+    display: block;
+}
+
+.post-template .gh-container.is-grid .gh-feed {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.post-template .gh-container .gh-container-title {
+    display: block;
+}
+
+/* 19. Archive
+/* ---------------------------------------------------------- */
+
+.gh-archive {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    gap: var(--grid-gap);
+    margin-block: 80px 24px;
+}
+
+.gh-archive.has-image {
+    margin-top: 48px;
+}
+
+.gh-archive-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--grid-gap);
+    grid-column: 1 / -1;
+    padding-bottom: clamp(40px, 2.73vw + 29.09px, 64px);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.gh-archive.has-image .gh-archive-inner {
+    align-items: center;
+    grid-column: 1 / -1;
+}
+
+.gh-archive:not(.has-sidebar):not(.has-image) .gh-archive-inner {
+    grid-column: 3 / span 12;
+}
+
+.gh-archive .gh-article-image {
+    grid-column: auto;
+    margin-top: 0;
+}
+
+:is(.tag-template, .author-template) .gh-container {
+    margin-top: 0;
+}
+
+.author-template .gh-archive-inner {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 24px;
+}
+
+.author-template .gh-article-image {
+    margin-top: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-template .gh-article-title {
+    font-size: 3.6rem;
+}
+
+.gh-author-meta {
+    display: flex;
+    gap: 10px;
+    margin-top: 14px;
+    font-size: 1.5rem;
+    font-weight: 550;
+    color: var(--color-secondary-text);
+}
+
+.gh-author-meta a {
+    color: inherit;
+}
+
+.gh-author-social {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-left: 3px;
+}
+
+.gh-author-social svg {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 1199px) {
+    .gh-archive {
+        display: block;
+    }
+}
