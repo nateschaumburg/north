@@ -482,6 +482,14 @@ a:active {
 	text-align: center;
 }
 
+.no-image .entry-header {
+	padding: 10% 0 5%;
+}
+
+.page-template .no-image .entry-content {
+	padding-bottom: 10%;
+}
+
 .entry-title {
 	font-size: 52px;
 	line-height: 1.2;
