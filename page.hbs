@@ -6,11 +6,11 @@
 
 	<div class="page-wrap">
 	    <article class="gh-article {{post_class}}">
+	    	{{> "feature-image"}}
+	    	
 			<div class="content-wrap gh-content gh-canvas">
 				{{#match @page.show_title_and_feature_image}}
 					<header class="entry-header">
-						{{> "feature-image"}}
-
 						<h1 class="entry-title">{{{title}}}</h1>
 					</header><!-- .entry-header -->
 				 {{/match}}
